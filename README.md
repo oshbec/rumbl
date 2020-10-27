@@ -1,5 +1,7 @@
 # Rumbl
 
+To set up your local development database, run `./config/dev_db_setup.sh`.
+
 To start your Phoenix server:
 
   * Install dependencies with `mix deps.get`

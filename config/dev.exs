@@ -6,6 +6,7 @@ config :rumbl, Rumbl.Repo,
   password: "b1aac842-f913-4339-8c08-5ab9e6f8e89c",
   database: "rumbl_dev",
   hostname: "localhost",
+  port: 5440,
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
 
