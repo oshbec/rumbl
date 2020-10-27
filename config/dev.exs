@@ -2,7 +2,7 @@ use Mix.Config
 
 # Configure your database
 config :rumbl, Rumbl.Repo,
-  username: "rumbl",
+  username: "rumbl_dev",
   password: "b1aac842-f913-4339-8c08-5ab9e6f8e89c",
   database: "rumbl_dev",
   hostname: "localhost",
