@@ -19,7 +19,7 @@ jobs:
           - 5440:5432
         env:
           POSTGRES_PASSWORD: "b1aac842-f913-4339-8c08-5ab9e6f8e89c"
-          POSTGRES_USER: rumbl_test
+          POSTGRES_USER: rumbl
         options: --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries 3
     
 
