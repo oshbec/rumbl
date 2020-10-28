@@ -42,4 +42,6 @@ jobs:
       run: mix test
     - name: Check formatting
       run: mix format --check-formatted
+    - name: Lint
+      run: credo suggest
 
