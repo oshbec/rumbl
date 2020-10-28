@@ -1,4 +1,7 @@
 defmodule Rumbl.Accounts.User do
+  @moduledoc """
+  Schema for users
+  """
   use Ecto.Schema
   import Ecto.Changeset
 
