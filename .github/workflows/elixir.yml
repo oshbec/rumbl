@@ -18,7 +18,7 @@ jobs:
         ports:
           - 5440:5432
         env:
-          POSTGRES_PASSWORD: "9df61cf2-8e76-4f35-aaf6-4ec4fee7e65d"
+          POSTGRES_PASSWORD: "b1aac842-f913-4339-8c08-5ab9e6f8e89c"
           POSTGRES_USER: rumbl_test
         options: --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries 3
     
