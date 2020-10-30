@@ -1,4 +1,7 @@
 defmodule RumblWeb.Auth do
+  @moduledoc """
+  Plug to handle authentication, login, and logout
+  """
   import Plug.Conn
 
   def init(opts), do: opts
