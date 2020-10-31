@@ -39,6 +39,7 @@ defmodule RumblWeb.Router do
 
     scope "/" do
       pipe_through :browser
+      resources "/videos", RumblWeb.VideoController
       live_dashboard "/dashboard", metrics: RumblWeb.Telemetry, ecto_repos: [Rumbl.Repo]
     end
   end
