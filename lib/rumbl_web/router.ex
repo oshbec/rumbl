@@ -37,9 +37,13 @@ defmodule RumblWeb.Router do
   if Mix.env() in [:dev, :test] do
     import Phoenix.LiveDashboard.Router
 
+    scope "/manage" do
+      pipe_through [:browser, :authenticate_user]
+      resources "/videos", RumblWeb.VideoController
+    end
+
     scope "/" do
       pipe_through :browser
-      resources "/videos", RumblWeb.VideoController
       live_dashboard "/dashboard", metrics: RumblWeb.Telemetry, ecto_repos: [Rumbl.Repo]
     end
   end
