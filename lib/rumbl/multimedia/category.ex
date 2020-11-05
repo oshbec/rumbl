@@ -1,4 +1,7 @@
 defmodule Rumbl.Multimedia.Category do
+  @moduledoc """
+  Categories for various multimedia
+  """
   use Ecto.Schema
   import Ecto.Changeset
   import Ecto.Query

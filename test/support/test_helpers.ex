@@ -1,4 +1,7 @@
 defmodule Rumbl.TestHelpers do
+  @moduledoc """
+  Sets up various fixtures for our tests
+  """
   alias Rumbl.{Accounts, Multimedia}
 
   def user_fixture(attrs \\ %{}) do
