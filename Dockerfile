@@ -1,7 +1,7 @@
 FROM node:14 AS assets
 
 COPY . .
-RUN npm ci --prefix ./assets
+RUN npm install --prefix ./assets
 RUN npm run deploy --prefix ./assets
 
 FROM hexpm/elixir:1.11.2-erlang-23.1.3-alpine-3.12.1 AS compile
